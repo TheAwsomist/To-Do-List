@@ -5,10 +5,10 @@ import TaskList from "./TaskList";
 const HomePage = () => {
     return ( 
         <div className="homepage">
-            <div className="safe-zone">
+            {/* <div className="safe-zone"> */}
                 <SearchBar/>
                 <TaskList/>
-            </div>
+            {/* </div> */}
         </div>
      );
 }

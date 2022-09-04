@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useContext } from "react";
 import { TaskContext } from "../TaskContext";
 
@@ -7,6 +8,9 @@ const Tasks = ({task, id}) => {
     const deleter = (id) =>{
         let temp = [...tasks]
         temp = temp.filter(task => task.id !== id);
+        axios.post(`http://localhost:5000/delete/${id}`)
+        .then(res=>console.log("successfully deleted"))
+        .catch(err => console.log("could not delete"))
         console.log(id);
         console.log(temp);
         SetTasks(temp);

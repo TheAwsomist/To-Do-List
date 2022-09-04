@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Getting Started with Create React App
+
+The app still requires debugging and work in deleting tasks and marking them as complete in the mongodb using the mongoose models.
+The standalone front end application is able to perform all the said tasks though.
+
+Technologies used:
+>ReactJS
+>Context API
+>Node JS
+>Axios API
+>SASS/CSS
+>Express JS
+>MongoDB
+
 ## Available Scripts
 
 In the project directory, you can run:
