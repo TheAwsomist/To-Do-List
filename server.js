@@ -42,9 +42,9 @@ app.get("/", async(req,res) =>{
     // console.log(result);
 })
 
-app.post("/query",async(req,res) => {
+app.post("/delete/:id",async(req,res) => {
     try{
-        await Tasks.deleteOne({id:req.query.id});
+        await Tasks.deleteOne({id:req.params.id});
         console.log("success!");
         res.status(200).send("successfully deleted task");
     }catch(error){
